@@ -1,0 +1,8 @@
+<div class="ngx-image-gallery">
+    <img *ngFor="let image of images; let i = index"
+      class="thumbnail"
+      [src] = image.src
+      [alt] = image.alt
+      (click)="openPreview(image, i)"
+    >
+</div>

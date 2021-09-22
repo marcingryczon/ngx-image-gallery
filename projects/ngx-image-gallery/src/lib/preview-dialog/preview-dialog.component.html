@@ -1,0 +1,11 @@
+<div class="info"></div>
+<div class="preview-container">
+  <button mat-icon-button color="primary" class="icon-button-large" [disableRipple]="true" (click)="prevImage(currentImageIndex)">
+    <mat-icon>navigate_before</mat-icon>
+  </button>
+  <img [src]="currentImage.src" [alt]="currentImage.alt" />
+  <button mat-icon-button color="primary" class="icon-button-large" [disableRipple]="true" (click)="nextImage(currentImageIndex)">
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+</div>  
+<div class="info">{{currentImageIndex+1}}/{{ data.imagesCount}}</div>
