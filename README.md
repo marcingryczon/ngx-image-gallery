@@ -45,6 +45,19 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
   ];
 ```
 
+### Use locally
+
+Inside gallery repository directory:
+1. Use `npm install`
+2. Build package with `npm run build`
+3. Inside `dist` directory use `npm link`
+
+Inside app directory where gallery will be used
+1.  Make sure set in `angular.json` (build section)
+    
+           "preserveSymlinks": true
+
+2. Link package with `npm link ngx-image-gallery`
 ## API docs:
 
 ### Inputs
