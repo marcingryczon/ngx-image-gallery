@@ -45,5 +45,7 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
   ];
 ```
 
+![Gallery](https://github.com/marcingryczon/ngx-image-gallery/readme-images/readme_img_1.png)
+![Gallery item](https://github.com/marcingryczon/ngx-image-gallery/readme-images/readme_img_1.png)
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
