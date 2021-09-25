@@ -51,8 +51,8 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
 Name | Values | Defaut | Description
 ------------ | ------------- | ------------ | -------------
 images | `NgxImage[]` | [] | Array of objects based on `NgxImageInterface`.Every object must contain `src` and `alt` property.
-contentCentered | `true` | `false` | `false` | Gallery items should be centered
-contentDirection | `'row'` | `'column'` | `'row'` | Gallery should be dispalyed as row or column
+contentCentered | `true` / `false` | `false` | Gallery items should be centered
+contentDirection | `'row'` / `'column'` | `false` | Gallery should be dispalyed as row or column
 
 ## Preview:
 
