@@ -1,6 +1,6 @@
 # NgxImageGallery
 
-## Angular image gallery created with Angular.
+## Angular 12+ image gallery created with Angular.
 
 ## How to use:
 
@@ -44,7 +44,17 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
     ...
   ];
 ```
-## Preview
+
+## API docs:
+
+### Inputs
+Name | Values | Defaut | Description
+------------ | ------------- | ------------ | -------------
+images | `NgxImage[]` | [] | Array of objects based on `NgxImageInterface`.Every object must contain `src` and `alt` property.
+contentCentered | `true` | `false` | `false` | Gallery items should be centered
+contentDirection | `'row'` | `'column'` | `'row'` | Gallery should be dispalyed as row or column
+
+## Preview:
 
 ### Gallery:
 ![Gallery](https://raw.githubusercontent.com/marcingryczon/ngx-image-gallery/master/redme-images/readme_img_1.png)

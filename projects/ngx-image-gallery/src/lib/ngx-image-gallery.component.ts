@@ -9,7 +9,7 @@ import { PreviewDialogComponent } from './preview-dialog/preview-dialog.componen
   styleUrls: ['./ngx-image-gallery.scss'],
 })
 export class NgxImageGalleryComponent implements OnInit {
-  @Input() images: NgxImage[];
+  @Input() images: NgxImage[] = [];
   @Input() contentCentered: true | false = false;
   @Input() contentDirection: 'row' | 'column' = 'row';
 
