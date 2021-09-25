@@ -44,8 +44,12 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
     ...
   ];
 ```
+## Preview
 
+### Gallery:
 ![Gallery](https://raw.githubusercontent.com/marcingryczon/ngx-image-gallery/master/redme-images/readme_img_1.png)
+
+### Gallery item:
 ![Gallery item](https://raw.githubusercontent.com/marcingryczon/ngx-image-gallery/master/redme-images/readme_img_2.png)
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
