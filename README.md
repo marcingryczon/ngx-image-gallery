@@ -1,6 +1,6 @@
 # NgxImageGallery
 
-## Angular 12+ image gallery created with Angular.
+## Angular 12+ image gallery.
 
 ## How to use:
 
