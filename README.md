@@ -52,7 +52,14 @@ Name | Values | Defaut | Description
 ------------ | ------------- | ------------ | -------------
 images | `NgxImage[]` | [] | Array of objects based on `NgxImageInterface`.Every object must contain `src` and `alt` property.
 contentCentered | `true` / `false` | `false` | Gallery items should be centered
-contentDirection | `'row'` / `'column'` | `false` | Gallery should be dispalyed as row or column
+contentDirection | `'row'` / `'column'` | `'row'` | Gallery should be dispalyed as row or column
+
+### Interfaces
+NgxImage
+Property | Type | Description
+------------ | ------------- | ------------
+src | string | Image url
+alt | string | Image alt
 
 ## Preview:
 
