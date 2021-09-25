@@ -9,27 +9,25 @@ import { PreviewDialogComponent } from './preview-dialog/preview-dialog.componen
   styleUrls: ['./ngx-image-gallery.scss'],
 })
 export class NgxImageGalleryComponent implements OnInit {
+  @Input() images: NgxImage[];
+  @Input() contentCentered: true | false = false;
+  @Input() contentDirection: 'row' | 'column' = 'row';
 
-  @Input() images:NgxImage[];
+  constructor(private dialog: MatDialog) {}
 
-  constructor(private dialog: MatDialog) { }
-
-  ngOnInit(): void {
-  }
-  
+  ngOnInit(): void {}
 
   openPreview(image: NgxImage, currentImageIndex: number): void {
     this.dialog.open(PreviewDialogComponent, {
-      autoFocus:false,
+      autoFocus: false,
       hasBackdrop: true,
       maxWidth: '90%',
       data: {
         image,
-        images:this.images,
+        images: this.images,
         currentImageIndex: currentImageIndex,
-        imagesCount: this.images.length
-      }
+        imagesCount: this.images.length,
+      },
     });
   }
-
 }

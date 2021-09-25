@@ -6,6 +6,7 @@ import { PreviewDialogComponent } from './preview-dialog/preview-dialog.componen
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -15,7 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
     PreviewDialogComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     MatDialogModule,
     MatIconModule,
     MatButtonModule,

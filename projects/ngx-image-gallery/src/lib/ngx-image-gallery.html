@@ -1,4 +1,8 @@
-<div class="ngx-image-gallery">
+<div class="ngx-image-gallery" [ngClass]="{
+  'center-content': contentCentered,
+  'content-direction-column':contentDirection === 'column',
+  'content-direction-row': contentDirection === 'row'
+}">
     <img *ngFor="let image of images; let i = index"
       class="thumbnail"
       [src] = image.src
