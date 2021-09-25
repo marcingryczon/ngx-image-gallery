@@ -1,27 +1,49 @@
 # NgxImageGallery
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+## Angular image gallery created with Angular.
 
-## Development server
+## How to use:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Import `NgxImageGalleryModule` in app.module.ts:
+```
+import { NgxImageGalleryModule } from 'ngx-image-gallery';
 
-## Code scaffolding
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    ...
+    NgxImageGalleryModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery must be displayed.
+```
+<div class="container">
+  <div class="gallery">
+    <ngx-image-gallery [images]=images></ngx-image-gallery>
+  </div>
+</div>
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`images` input should contain image src path and alt like this:
+```
+  images:NgxImage[] = [
+    {
+      'src': 'https://picsum.photos/id/1/800/600',
+      'alt': 'random_image_1'
+    },
+    {
+      'src': 'https://picsum.photos/id/2/800/600',
+      'alt': 'random_image_2'
+    },
+    ...
+  ];
+```
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
