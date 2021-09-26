@@ -5,7 +5,7 @@
 ## How to use:
 
 Import `NgxImageGalleryModule` in app.module.ts:
-```
+```js
 import { NgxImageGalleryModule } from 'ngx-image-gallery';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { NgxImageGalleryModule } from 'ngx-image-gallery';
 export class AppModule { }
 ```
 Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery must be displayed.
-```
+```html
 <div class="container">
   <div class="gallery">
     <ngx-image-gallery [images]=images></ngx-image-gallery>
@@ -31,7 +31,7 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
 ```
 
 `images` input should contain image src path and alt like this:
-```
+```js
   images:NgxImage[] = [
     {
       'src': 'https://picsum.photos/id/1/800/600',
