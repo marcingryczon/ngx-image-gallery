@@ -10,12 +10,16 @@ import { PreviewDialogComponent } from './preview-dialog/preview-dialog.componen
 })
 export class NgxImageGalleryComponent implements OnInit {
   @Input() images: NgxImage[] = [];
-  @Input() contentCentered: true | false = false;
+  @Input() contentAlign: 'center' | 'right';
   @Input() contentDirection: 'row' | 'column' = 'row';
 
   constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {}
+
+  imageTrackBy(index: number, image: NgxImage): string {
+    return image.src;
+  }
 
   openPreview(image: NgxImage, currentImageIndex: number): void {
     this.dialog.open(PreviewDialogComponent, {

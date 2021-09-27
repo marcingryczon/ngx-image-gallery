@@ -5,22 +5,28 @@
   
   .thumbnail {
     width: calc(10% - 10px);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.content {
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-right {
+    justify-content: end;
   }
   
-  .thumbnail:hover {
-    cursor: pointer;
+  &-direction-row {
+    flex-direction: row;
   }
-}
-
-.center-content {
-  justify-content: center;
-  align-items: center;
-}
-
-.content-direction-row {
-  flex-direction: row;
-}
-
-.content-direction-column {
-  flex-direction: column;
+  
+  &-direction-column {
+    flex-direction: column;
+  }
 }
