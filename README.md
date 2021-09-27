@@ -1,6 +1,6 @@
 # NgxImageGallery
 
-## Angular 12+ image gallery.
+## Angular 12+ image gallery created with [Angular Material](https://material.angular.io/) components.
 
 ## How to use:
 
