@@ -52,10 +52,10 @@ Inside gallery repository directory:
 2. Build package with `npm run build`
 3. Inside `dist` directory use `npm link`
 
-Inside app directory where gallery will be used
+Inside app directory where gallery will be used:
 1.  Make sure set in `angular.json` (build section)
     
-           "preserveSymlinks": true
+        "preserveSymlinks": true
 
 2. Link package with `npm link ngx-image-gallery`
 ## API docs:
@@ -63,9 +63,9 @@ Inside app directory where gallery will be used
 ### Inputs
 Name | Values | Defaut | Description
 ------------ | ------------- | ------------ | -------------
-images | `NgxImage[]` | [] | Array of objects based on `NgxImageInterface`.Every object must contain `src` and `alt` property.
-contentCentered | `true` / `false` | `false` | Gallery items should be centered
-contentDirection | `'row'` / `'column'` | `'row'` | Gallery should be dispalyed as row or column
+images | `NgxImage[]` | [] | Array of objects based on `NgxImageInterface`. Every object must contain `src` and `alt` property.
+contentAlign | `'center'` \| `'right'` |  | Gallery items can be `centered` or `right` alignment. `Left` alignment is default.
+contentDirection | `'row'` \| `'column'` | `'row'` | Gallery should be dispalyed as row or column.
 
 ### Interfaces
 NgxImage
