@@ -82,3 +82,5 @@ alt | string | Image alt
 ![Gallery item](https://raw.githubusercontent.com/marcingryczon/ngx-image-gallery/master/redme-images/readme_img_2.png)
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+
+test
