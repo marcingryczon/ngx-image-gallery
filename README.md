@@ -45,9 +45,8 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
   ];
 ```
 
-### Use locally
-
-Inside gallery repository directory:
+## How to develop:
+Inside `root` repository:
 1. Use `npm install`
 2. Build package with `npm run build`
 3. Inside `dist` directory use `npm link`
