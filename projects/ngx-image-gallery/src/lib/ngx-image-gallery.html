@@ -1,12 +1,13 @@
-<div class="ngx-image-gallery" [ngClass]="{
-  'center-content': contentCentered,
-  'content-direction-column':contentDirection === 'column',
-  'content-direction-row': contentDirection === 'row'
-}">
-    <img *ngFor="let image of images; let i = index"
-      class="thumbnail"
-      [src] = image.src
-      [alt] = image.alt
-      (click)="openPreview(image, i)"
-    >
+<div 
+  class="ngx-image-gallery"
+  [class.content-center]="contentAlign === 'center'"
+  [class.content-right]="contentAlign === 'right'"
+  [class.content-direction-column]="contentDirection === 'column'"
+  [class.content-direction-row]="contentDirection === 'row'"
+>
+  <img *ngFor="let image of images; let i = index; trackBy: imageTrackBy"
+    class="thumbnail"
+    [src] = image.src
+    [alt] = image.alt
+    (click)="openPreview(image, i)">
 </div>
