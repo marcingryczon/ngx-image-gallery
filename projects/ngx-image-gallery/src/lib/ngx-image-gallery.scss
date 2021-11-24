@@ -13,15 +13,28 @@
   }
 }
 
-.center-content {
-  justify-content: center;
-  align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
-.content-direction-row {
-  flex-direction: row;
-}
+.content {
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
 
-.content-direction-column {
-  flex-direction: column;
+  &-right {
+    justify-content: end;
+    align-items: end;
+  }
+  
+  &-direction-row {
+    flex-direction: row;
+  }
+  
+  &-direction-column {
+    flex-direction: column;
+  }
 }
