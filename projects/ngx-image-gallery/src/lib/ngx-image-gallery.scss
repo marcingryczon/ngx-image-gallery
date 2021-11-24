@@ -3,15 +3,9 @@
   gap: 10px;
   flex-wrap: wrap;
   height: 125px;
-  
+
   .thumbnail {
     max-height: 100%;
-  }
-  
-  .thumbnail:hover {
-    cursor: pointer;
-  }
-}
 
     &:hover {
       cursor: pointer;
@@ -29,11 +23,11 @@
     justify-content: end;
     align-items: end;
   }
-  
+
   &-direction-row {
     flex-direction: row;
   }
-  
+
   &-direction-column {
     flex-direction: column;
   }
