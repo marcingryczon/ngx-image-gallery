@@ -44,20 +44,6 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
     ...
   ];
 ```
-
-## How to develop:
-Inside `root` repository:
-1. Use `npm install`
-2. Build package with `npm run build`
-3. Inside `root` directory use `npm run link` to create a symlink in the (node_modules) global folder
-4. When you finish work, remember to unlink with `npm run unlink` command
-
-Inside app directory where gallery will be used:
-1.  Make sure set in `angular.json` (build section)
-    
-        "preserveSymlinks": true
-
-2. Link package with `npm link ngx-image-gallery`
 ## API docs:
 
 ### Inputs
