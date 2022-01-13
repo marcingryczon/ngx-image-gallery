@@ -44,6 +44,14 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
     ...
   ];
 ```
+
+## Development
+
+Repository contains demo app that can be useful in local lib development.
+
+### How to use local demo app:
+
+Go to `projects/demo-app` and run demo app using `ng serve` command. App will be running at `http://localhost:4200`
 ## API docs:
 
 ### Inputs
