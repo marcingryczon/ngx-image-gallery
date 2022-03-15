@@ -9,8 +9,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { PreviewDialogHeaderComponent } from './preview-dialog/preview-dialog-header/preview-dialog-header.component';
 
-
-
 @NgModule({
   declarations: [
     NgxImageGalleryComponent,
@@ -27,4 +25,4 @@ import { PreviewDialogHeaderComponent } from './preview-dialog/preview-dialog-he
     NgxImageGalleryComponent
   ]
 })
-export class NgxImageGalleryModule { }
+export class NgxImageGalleryModule {}
