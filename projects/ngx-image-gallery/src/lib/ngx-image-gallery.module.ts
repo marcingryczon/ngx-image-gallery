@@ -8,21 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 
-
-
 @NgModule({
-  declarations: [
-    NgxImageGalleryComponent,
-    PreviewDialogComponent
-  ],
-  imports: [
-    CommonModule,
-    MatDialogModule,
-    MatIconModule,
-    MatButtonModule,
-  ],
-  exports: [
-    NgxImageGalleryComponent
-  ]
+  declarations: [NgxImageGalleryComponent, PreviewDialogComponent],
+  imports: [CommonModule, MatDialogModule, MatIconModule, MatButtonModule],
+  exports: [NgxImageGalleryComponent]
 })
-export class NgxImageGalleryModule { }
+export class NgxImageGalleryModule {}

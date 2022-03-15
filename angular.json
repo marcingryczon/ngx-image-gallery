@@ -31,9 +31,21 @@
             "tsConfig": "projects/ngx-image-gallery/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-image-gallery/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-image-gallery/**/*.ts",
+              "projects/ngx-image-gallery/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "ngx-image-gallery"
+  "defaultProject": "ngx-image-gallery",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

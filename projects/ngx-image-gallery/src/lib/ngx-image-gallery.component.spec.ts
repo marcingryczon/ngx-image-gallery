@@ -8,9 +8,8 @@ describe('NgxImageGalleryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxImageGalleryComponent ]
-    })
-    .compileComponents();
+      declarations: [NgxImageGalleryComponent]
+    }).compileComponents();
   });
 
   beforeEach(() => {
