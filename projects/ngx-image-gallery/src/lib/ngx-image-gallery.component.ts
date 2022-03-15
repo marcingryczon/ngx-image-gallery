@@ -6,7 +6,7 @@ import { PreviewDialogComponent } from './preview-dialog/preview-dialog.componen
 @Component({
   selector: 'ngx-image-gallery',
   templateUrl: './ngx-image-gallery.html',
-  styleUrls: ['./ngx-image-gallery.scss']
+  styleUrls: ['./ngx-image-gallery.scss'],
 })
 export class NgxImageGalleryComponent implements OnInit {
   @Input() images: NgxImage[] = [];
@@ -30,8 +30,8 @@ export class NgxImageGalleryComponent implements OnInit {
         image,
         images: this.images,
         currentImageIndex: currentImageIndex,
-        imagesCount: this.images.length
-      }
+        imagesCount: this.images.length,
+      },
     });
   }
 }

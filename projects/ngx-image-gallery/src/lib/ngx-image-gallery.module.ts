@@ -11,6 +11,6 @@ import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [NgxImageGalleryComponent, PreviewDialogComponent],
   imports: [CommonModule, MatDialogModule, MatIconModule, MatButtonModule],
-  exports: [NgxImageGalleryComponent]
+  exports: [NgxImageGalleryComponent],
 })
 export class NgxImageGalleryModule {}

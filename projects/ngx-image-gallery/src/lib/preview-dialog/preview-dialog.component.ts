@@ -5,7 +5,7 @@ import { NgxImage } from '../image.interface';
 @Component({
   selector: 'lib-preview-dialog',
   templateUrl: './preview-dialog.component.html',
-  styleUrls: ['./preview-dialog.component.scss']
+  styleUrls: ['./preview-dialog.component.scss'],
 })
 export class PreviewDialogComponent implements OnInit {
   currentImage: NgxImage;
