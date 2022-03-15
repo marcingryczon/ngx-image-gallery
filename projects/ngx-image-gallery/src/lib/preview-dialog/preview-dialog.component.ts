@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NgxImage } from '../image.interface';
 
 @Component({
-  selector: 'lib-preview-dialog',
+  selector: 'ngx-preview-dialog',
   templateUrl: './preview-dialog.component.html',
   styleUrls: ['./preview-dialog.component.scss'],
 })
