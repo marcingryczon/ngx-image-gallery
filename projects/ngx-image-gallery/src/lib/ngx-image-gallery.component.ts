@@ -33,7 +33,7 @@ export class NgxImageGalleryComponent implements OnInit {
         images: this.images,
         currentImageIndex: currentImageIndex,
         imagesCount: this.images.length,
-        header: this.header
+        header: this.header,
       },
     });
   }

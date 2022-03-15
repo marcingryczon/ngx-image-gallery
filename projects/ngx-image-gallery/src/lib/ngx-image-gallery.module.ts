@@ -13,16 +13,9 @@ import { PreviewDialogHeaderComponent } from './preview-dialog/preview-dialog-he
   declarations: [
     NgxImageGalleryComponent,
     PreviewDialogComponent,
-    PreviewDialogHeaderComponent
+    PreviewDialogHeaderComponent,
   ],
-  imports: [
-    CommonModule,
-    MatDialogModule,
-    MatIconModule,
-    MatButtonModule,
-  ],
-  exports: [
-    NgxImageGalleryComponent
-  ]
+  imports: [CommonModule, MatDialogModule, MatIconModule, MatButtonModule],
+  exports: [NgxImageGalleryComponent],
 })
 export class NgxImageGalleryModule {}
