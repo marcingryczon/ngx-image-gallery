@@ -5,10 +5,11 @@
     "ng": "ng",
     "start": "ng build ngx-image-gallery --watch",
     "build": "ng build ngx-image-gallery",
-    "watch": "ng build ngx-image-gallery --watch --configuration development",
+    "start:dev": "ng build ngx-image-gallery --watch --configuration development",
     "test": "ng test",
     "link": "cd ./dist/ngx-image-gallery && npm link",
-    "unlink": "cd ./dist/ngx-image-gallery && npm unlink"
+    "unlink": "cd ./dist/ngx-image-gallery && npm unlink",
+    "start-demo-app": "cd ./projects/demo-app && ng serve"
   },
   "private": true,
   "dependencies": {
