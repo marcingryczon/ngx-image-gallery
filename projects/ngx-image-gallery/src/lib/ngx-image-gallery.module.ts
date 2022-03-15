@@ -7,13 +7,15 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { PreviewDialogHeaderComponent } from './preview-dialog/preview-dialog-header/preview-dialog-header.component';
 
 
 
 @NgModule({
   declarations: [
     NgxImageGalleryComponent,
-    PreviewDialogComponent
+    PreviewDialogComponent,
+    PreviewDialogHeaderComponent
   ],
   imports: [
     CommonModule,
