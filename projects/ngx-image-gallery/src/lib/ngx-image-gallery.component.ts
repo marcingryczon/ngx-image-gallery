@@ -12,6 +12,7 @@ export class NgxImageGalleryComponent implements OnInit {
   @Input() images: NgxImage[] = [];
   @Input() contentAlign: 'center' | 'right';
   @Input() contentDirection: 'row' | 'column' = 'row';
+  @Input() header = true;
 
   constructor(private dialog: MatDialog) {}
 
@@ -25,12 +26,14 @@ export class NgxImageGalleryComponent implements OnInit {
     this.dialog.open(PreviewDialogComponent, {
       autoFocus: false,
       hasBackdrop: true,
+      disableClose: this.header,
       maxWidth: '90%',
       data: {
         image,
         images: this.images,
         currentImageIndex: currentImageIndex,
         imagesCount: this.images.length,
+        header: this.header
       },
     });
   }

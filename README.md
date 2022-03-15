@@ -45,19 +45,13 @@ Use `<ngx-image-gallery></ngx-image-gallery>` selector in place where gallery mu
   ];
 ```
 
-## How to develop:
-Inside `root` repository:
-1. Use `npm install`
-2. Build package with `npm run build`
-3. Inside `root` directory use `npm run link` to create a symlink in the (node_modules) global folder
-4. When you finish work, remember to unlink with `npm run unlink` command
+## Development
 
-Inside app directory where gallery will be used:
-1.  Make sure set in `angular.json` (build section)
-    
-        "preserveSymlinks": true
+Repository contains demo app that can be useful in local lib development.
 
-2. Link package with `npm link ngx-image-gallery`
+### How to use local demo app:
+
+Go to `projects/demo-app` and run demo app using `ng serve` command. App will be running at `http://localhost:4200`
 ## API docs:
 
 ### Inputs
