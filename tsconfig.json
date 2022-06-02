@@ -14,7 +14,6 @@
     "downlevelIteration": true,
     "paths": {
       "ngx-image-gallery": [
-        "dist/ngx-image-gallery/ngx-image-gallery",
         "dist/ngx-image-gallery"
       ]
     },
