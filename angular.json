@@ -149,8 +149,9 @@
       }
     }
   },
-  "defaultProject": "ngx-image-gallery",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
