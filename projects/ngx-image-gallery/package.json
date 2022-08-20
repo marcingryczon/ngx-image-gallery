@@ -2,12 +2,12 @@
   "name": "ngx-image-gallery",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^12.2.0",
-    "@angular/core": "^12.2.0",
-    "@angular/matertial": "^12.2.5"
+    "@angular/common": "^14.0.1",
+    "@angular/core": "^14.0.1",
+    "@angular/matertial": "^14.0.1"
   },
   "dependencies": {
-    "@angular/material": "^12.2.5",
-    "tslib": "^2.3.0"
+    "@angular/material": "^14.0.1",
+    "tslib": "^2.4.0"
   }
 }
