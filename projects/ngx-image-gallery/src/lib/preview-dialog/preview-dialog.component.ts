@@ -3,7 +3,7 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { NgxImage } from '../image.interface';
 
 @Component({
-  selector: 'ngx-preview-dialog',
+  selector: 'ngx-image-preview-dialog',
   templateUrl: './preview-dialog.component.html',
   styleUrls: ['./preview-dialog.component.scss'],
 })
@@ -11,6 +11,8 @@ export class PreviewDialogComponent implements OnInit {
   currentImage: NgxImage;
   currentImageIndex: number;
   header: boolean = true;
+  images: NgxImage[];
+  isImageLoaded = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA)
@@ -27,6 +29,7 @@ export class PreviewDialogComponent implements OnInit {
     this.currentImage = this.data.image;
     this.currentImageIndex = this.data.currentImageIndex;
     this.header = this.data.header;
+    this.images = this.data.images;
   }
 
   nextImage(currentImageIndex: number): void {
@@ -45,5 +48,9 @@ export class PreviewDialogComponent implements OnInit {
         : currentImageIndex - 1;
     this.currentImage = this.data.images[index];
     this.currentImageIndex = index;
+  }
+
+  imageLoaded(): void {
+    this.isImageLoaded = true;
   }
 }

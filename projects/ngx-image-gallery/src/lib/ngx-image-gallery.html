@@ -5,11 +5,8 @@
   [class.content-direction-column]="contentDirection === 'column'"
   [class.content-direction-row]="contentDirection === 'row'"
 >
-  <img
-    *ngFor="let image of images; let i = index; trackBy: imageTrackBy"
-    class="thumbnail"
-    [src]="image.src"
-    [alt]="image.alt"
-    (click)="openPreview(image, i)"
-  />
+  <ngx-image-gallery-thumbnails
+    [images]="images"
+    [header]="header"
+  ></ngx-image-gallery-thumbnails>
 </div>

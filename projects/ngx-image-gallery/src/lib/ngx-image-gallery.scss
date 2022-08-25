@@ -1,15 +1,9 @@
-.ngx-image-gallery {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  height: 125px;
+.ngx-image-gallery{
+  height: 100%;
 
-  .thumbnail {
-    max-height: 100%;
-
-    &:hover {
-      cursor: pointer;
-    }
+  ngx-image-gallery-thumbnails {
+    display: flex;
+    height: 100%;
   }
 }
 

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  height: inherit;
+    .thumbnail {
+    max-height: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+}

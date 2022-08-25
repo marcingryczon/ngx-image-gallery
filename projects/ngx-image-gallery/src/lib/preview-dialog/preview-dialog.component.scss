@@ -7,11 +7,20 @@
     max-height: calc(100vh / 1.5);
   }
 
+  .loading-spinner {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .icon-button-large {
     width: 48px;
     height: 48px;
     line-height: 48px;
   }
+
   mat-icon {
     font-size: 40px;
     width: 40px;
@@ -19,6 +28,7 @@
     line-height: 40px;
   }
 }
+
 .info {
   display: flex;
   justify-content: center;

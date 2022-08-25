@@ -13,7 +13,7 @@ export class AppComponent {
       'alt': 'random_image_1'
     },
     {
-      'src': 'https://picsum.photos/id/2/800/600',
+      'src': 'https://picsum.photos/id/2/1920/1080',
       'alt': 'random_image_2'
     },
   ];
