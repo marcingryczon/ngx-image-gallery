@@ -1,3 +1,10 @@
 <div class="container">
-  <img class="thumbnail" [src]="image.src" [alt]="image.alt" />
+  <img
+    class="thumbnail"
+    [rawSrc]="image.src"
+    [alt]="image.alt"
+    [width]="image.width"
+    [height]="image.height"
+    priority
+  />
 </div>

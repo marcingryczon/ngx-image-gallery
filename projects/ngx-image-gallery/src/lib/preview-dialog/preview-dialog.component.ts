@@ -12,7 +12,6 @@ export class PreviewDialogComponent implements OnInit {
   currentImageIndex: number;
   header: boolean = true;
   images: NgxImage[];
-  isImageLoaded = false;
 
   constructor(
     @Inject(MAT_DIALOG_DATA)
@@ -48,9 +47,5 @@ export class PreviewDialogComponent implements OnInit {
         : currentImageIndex - 1;
     this.currentImage = this.data.images[index];
     this.currentImageIndex = index;
-  }
-
-  imageLoaded(): void {
-    this.isImageLoaded = true;
   }
 }

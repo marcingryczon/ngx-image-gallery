@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgxImage } from '../../image.interface';
 
 @Component({
@@ -6,10 +6,9 @@ import { NgxImage } from '../../image.interface';
   templateUrl: './thumbnail.component.html',
   styleUrls: ['./thumbnail.component.scss'],
 })
-export class ThumbnailComponent implements OnInit {
+export class ThumbnailComponent {
   @Input() image!: NgxImage;
 
   constructor() {}
 
-  ngOnInit(): void {}
 }

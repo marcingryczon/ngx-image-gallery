@@ -3,6 +3,7 @@
   height: inherit;
     .thumbnail {
     max-height: 100%;
+    max-width: fit-content;
 
     &:hover {
       cursor: pointer;

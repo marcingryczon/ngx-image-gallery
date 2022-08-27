@@ -14,11 +14,7 @@
   <img
     [src]="currentImage.src"
     [alt]="currentImage.alt"
-    (load)="imageLoaded()"
   />
-  <div *ngIf="!isImageLoaded" class="loading-spinner">
-    <mat-spinner></mat-spinner>
-  </div>
   <button
     mat-icon-button
     color="primary"
@@ -31,7 +27,6 @@
 </div>
 <div class="info">{{ currentImageIndex + 1 }}/{{ data.imagesCount }}</div>
 <ngx-image-gallery-thumbnails
-  *ngIf="isImageLoaded"
   [dialogThumbnails]="true"
   [images]="images"
 ></ngx-image-gallery-thumbnails>
