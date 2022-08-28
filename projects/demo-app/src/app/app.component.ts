@@ -20,5 +20,11 @@ export class AppComponent {
       'width': 1920,
       'height': 1080
     },
+    {
+      'src': 'https://picsum.photos/id/3/200/300',
+      'alt': 'random_image_3',
+      'width': 200,
+      'height': 300
+    },
   ];
 }

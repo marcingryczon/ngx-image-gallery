@@ -48,4 +48,9 @@ export class PreviewDialogComponent implements OnInit {
     this.currentImage = this.data.images[index];
     this.currentImageIndex = index;
   }
+
+  selectedImage(imageIndex: number): void {
+    this.currentImage = this.data.images[imageIndex];
+    this.currentImageIndex = imageIndex;
+  }
 }

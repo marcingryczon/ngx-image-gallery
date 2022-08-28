@@ -1,8 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { NgxImage } from '../image.interface';
 import { PreviewDialogComponent } from '../preview-dialog/preview-dialog.component';
-
 @Component({
   selector: 'ngx-image-gallery-thumbnails',
   templateUrl: './thumbnails.component.html',
@@ -12,24 +11,23 @@ export class ThumbnailsComponent {
   @Input() images: NgxImage[] = [];
   @Input() dialogThumbnails = false;
   @Input() header = true;
+  @Output() selectedImageIndex = new EventEmitter<number>();
   private dialogRef: MatDialogRef<PreviewDialogComponent>;
   private animationDuration = '100ms';
 
   constructor(private dialog: MatDialog) {}
-
-  imageTrackBy(index: number, image: NgxImage): string {
-    return image.src;
+  imageTrackBy(index: number): string {
+    return index.toString();
   }
-
-  openPreview(image: NgxImage, currentImageIndex: number): void {
-    if (this.dialog.openDialogs.length === 1) {
-      this.animationDuration = '0ms';
-      this.dialog.openDialogs[0].close();
-      this.openDialog(image, currentImageIndex)
+  
+  clickHandler(image: NgxImage, currentImageIndex: number) {
+    if (!this.dialogThumbnails) {
+      this.openDialog(image, currentImageIndex);
     } else {
-      this.openDialog(image, currentImageIndex)
+      this.selectedImageIndex.next(currentImageIndex);
     }
   }
+
   openDialog(image: NgxImage, currentImageIndex: number): void {
     this.dialogRef = this.dialog.open(PreviewDialogComponent, {
       autoFocus: false,

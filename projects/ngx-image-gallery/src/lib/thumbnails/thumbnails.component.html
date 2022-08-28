@@ -4,6 +4,6 @@ class="container">
   <ngx-image-gallery-thumbnail
     *ngFor="let image of images; let i = index; trackBy: imageTrackBy"
     [image]="image"
-    (click)="openPreview(image, i)"
+    (click)="clickHandler(image, i)"
   ></ngx-image-gallery-thumbnail>
 </div>
